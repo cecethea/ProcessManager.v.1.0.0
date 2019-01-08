@@ -1,0 +1,38 @@
+<%include partials/_header.ejs%>
+
+
+
+<div style="margin-top: 20px ; margin-bottom: 20px; margin-left: 30px">
+    <form class="form-inline my-2 my-lg-0" method="get" action="/create_new_process">
+        <button type="submit" class="btn btn-success" >CREATE NEW PROCESS</button>
+    </form>
+</div>
+
+<div style="margin-left: 30px; margin-right: 50px">
+    <form method="get" action="/edit_process">
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th scope="col">Nº</th>
+            <th scope="col">PROCESS CODE</th>
+            <th scope="col">PROCESS NAME</th>
+            <th scope="col">ACTION</th>
+        </tr>
+        </thead>
+
+        <tbody>
+       <% data.forEach(function(d){ %>
+           <tr>
+               <th>1</th>
+               <th><%=d.pCode%></th>
+               <th><%=d.pName%></th>
+               <th><button type="submit" class="btn btn-info">EDIT</button></th>
+           </tr>
+      <% });%>
+        </tbody>
+    </table>
+    </form>
+</div>
+
+
+<%include partials/_footer.ejs%>

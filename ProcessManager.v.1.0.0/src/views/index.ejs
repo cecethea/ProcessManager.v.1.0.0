@@ -1,0 +1,36 @@
+<%include partials/_header.ejs%>
+
+<div style="margin-top: 20px ; margin-bottom: 20px; margin-left: 5px">
+    <form action="/new" method="get">
+        <button type="button" class="btn btn-success">Create New Process</button>
+    </form>
+</div>
+
+
+<div style="">
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">PROCESS CODE</th>
+                <th scope="col">PROCESS NAME</th>
+                <th scope="col">ACTION</th>
+            </tr>
+        </thead>
+        <form>
+            <tbody>
+                <tr class="table-active">
+                    <th scope="row">Active</th>
+                    <td>Column content</td>
+                    <td>Column content</td>
+                    <td><button type="button" class="btn btn-info">Edit</button><a href="/views/newpage.ejs"></a></td>
+                </tr>
+            </tbody>
+        </form>
+    </table>
+</div>
+
+
+
+</div>
